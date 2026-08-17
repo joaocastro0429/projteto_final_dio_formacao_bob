@@ -1,0 +1,20 @@
+{
+  "name": "trilha-dev",
+  "version": "1.0.0",
+  "description": "CLI de trilhas de estudo fictícias com desafios e certificados",
+  "main": "src/index.js",
+  "bin": {
+    "trilha-dev": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node src/index.js trilha javascript && node src/index.js desafio javascript iniciante && node src/index.js certificado javascript \"Joao Castro\""
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "figlet": "^1.7.0",
+    "boxen": "^5.1.2",
+    "cli-table3": "^0.6.3",
+    "gradient-string": "^2.0.2"
+  }
+}
