@@ -1,0 +1,26 @@
+{
+  "name": "trilha-dev-mcp",
+  "version": "1.0.0",
+  "description": "MCP Server para o projeto trilha-dev — DIO Formação",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "trilha-dev-mcp": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js && mkdir -p build/data && cp src/data/tracks.json build/data/tracks.json",
+    "dev": "tsc --watch"
+  },
+  "files": ["build", "src/data"],
+  "keywords": ["mcp", "trilha", "dio", "formacao"],
+  "author": "joaocastro",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "typescript": "^5.8.3"
+  }
+}

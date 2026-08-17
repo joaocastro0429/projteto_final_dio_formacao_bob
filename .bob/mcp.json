@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "trilha-dev": {
+      "command": "node",
+      "args": ["/home/joaocastro/projteto_final_dio_formacao_bob/mcp-server/build/index.js"],
+      "alwaysAllow": [
+        "listar_trilhas",
+        "ver_trilha",
+        "gerar_desafio",
+        "gerar_certificado"
+      ]
+    }
+  }
+}

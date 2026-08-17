@@ -1,0 +1,299 @@
+{
+  "tracks": {
+    "javascript": {
+      "name": "JavaScript Moderno",
+      "icon": "⚡",
+      "description": "Domine o JavaScript do básico ao avançado, passando por ES6+, assincronismo e Node.js.",
+      "duration": "12 semanas",
+      "level": "iniciante ao avançado",
+      "modules": [
+        {
+          "week": 1,
+          "title": "Fundamentos do JavaScript",
+          "topics": ["Variáveis e Tipos", "Operadores", "Estruturas de Controle", "Funções básicas"]
+        },
+        {
+          "week": 2,
+          "title": "Arrays e Objetos",
+          "topics": ["Métodos de Array (map, filter, reduce)", "Desestruturação", "Spread/Rest", "Objetos literais"]
+        },
+        {
+          "week": 3,
+          "title": "ES6+ e Módulos",
+          "topics": ["Arrow Functions", "Template Literals", "Classes", "Módulos ES6 (import/export)"]
+        },
+        {
+          "week": 4,
+          "title": "Assincronismo",
+          "topics": ["Callbacks", "Promises", "Async/Await", "Tratamento de erros"]
+        },
+        {
+          "week": 5,
+          "title": "DOM e Browser APIs",
+          "topics": ["Manipulação do DOM", "Eventos", "Fetch API", "LocalStorage"]
+        },
+        {
+          "week": 6,
+          "title": "Node.js e NPM",
+          "topics": ["Fundamentos do Node.js", "NPM e gerenciamento de pacotes", "File System", "HTTP module"]
+        },
+        {
+          "week": 7,
+          "title": "Express.js",
+          "topics": ["Criação de servidores", "Rotas e middlewares", "REST API", "Tratamento de erros HTTP"]
+        },
+        {
+          "week": 8,
+          "title": "Banco de Dados com JS",
+          "topics": ["MongoDB com Mongoose", "SQL com Sequelize", "ORM vs ODM", "Migrations"]
+        },
+        {
+          "week": 9,
+          "title": "Testes em JavaScript",
+          "topics": ["Jest (unit tests)", "Testes de integração", "Mocking", "Code coverage"]
+        },
+        {
+          "week": 10,
+          "title": "TypeScript Básico",
+          "topics": ["Tipagem estática", "Interfaces e Types", "Generics", "Decorators"]
+        },
+        {
+          "week": 11,
+          "title": "Projeto Prático",
+          "topics": ["Arquitetura de projeto", "API REST completa", "Autenticação JWT", "Deploy"]
+        },
+        {
+          "week": 12,
+          "title": "Boas Práticas e Carreira",
+          "topics": ["Clean Code", "Design Patterns", "Code Review", "Portfólio e LinkedIn"]
+        }
+      ],
+      "challenges": {
+        "iniciante": [
+          {
+            "title": "Calculadora de IMC",
+            "description": "Crie uma função que receba peso (kg) e altura (m) e retorne o IMC e a classificação (Abaixo do peso, Normal, Sobrepeso, Obesidade).",
+            "hint": "Use condicionais para classificar o IMC calculado com peso/(altura*altura).",
+            "example": "calcularIMC(70, 1.75) => { imc: 22.86, classificacao: 'Normal' }"
+          },
+          {
+            "title": "FizzBuzz Turbinado",
+            "description": "Crie uma função fizzBuzz(n) que retorne um array de 1 a n. Múltiplos de 3 viram 'Fizz', de 5 viram 'Buzz', de ambos viram 'FizzBuzz'.",
+            "hint": "Use o operador módulo (%) para verificar divisibilidade.",
+            "example": "fizzBuzz(15) => [1,2,'Fizz',4,'Buzz','Fizz',7,8,'Fizz','Buzz',11,'Fizz',13,14,'FizzBuzz']"
+          }
+        ],
+        "intermediario": [
+          {
+            "title": "Debounce Function",
+            "description": "Implemente uma função debounce(fn, delay) que retorne uma versão da função fn que só é executada após 'delay' ms sem ser chamada novamente.",
+            "hint": "Use setTimeout e clearTimeout. Pesquise sobre closures e como guardar o timer ID.",
+            "example": "const search = debounce(fetchResults, 300);"
+          },
+          {
+            "title": "Deep Clone sem JSON",
+            "description": "Implemente deepClone(obj) que copia um objeto de forma profunda sem usar JSON.stringify/parse, preservando funções e datas.",
+            "hint": "Use recursão para percorrer propriedades. Trate Date, Array e Object separadamente.",
+            "example": "deepClone({ a: 1, b: { c: [1,2,3] } }) => objeto completamente independente"
+          }
+        ],
+        "avancado": [
+          {
+            "title": "Mini Event Emitter",
+            "description": "Implemente uma classe EventEmitter com os métodos: on(event, listener), off(event, listener), emit(event, ...args) e once(event, listener).",
+            "hint": "Use um Map ou objeto para armazenar os listeners. 'once' deve remover o listener após a primeira execução.",
+            "example": "const emitter = new EventEmitter(); emitter.on('data', console.log); emitter.emit('data', 42);"
+          }
+        ]
+      }
+    },
+    "python": {
+      "name": "Python para Dados e Backend",
+      "icon": "🐍",
+      "description": "Aprenda Python do zero até ciência de dados e desenvolvimento de APIs com FastAPI.",
+      "duration": "14 semanas",
+      "level": "iniciante ao avançado",
+      "modules": [
+        { "week": 1, "title": "Fundamentos Python", "topics": ["Sintaxe básica", "Variáveis e tipos", "Input/Output", "Operadores"] },
+        { "week": 2, "title": "Estruturas de Dados", "topics": ["Listas", "Tuplas", "Dicionários", "Sets"] },
+        { "week": 3, "title": "Controle de Fluxo", "topics": ["if/elif/else", "for e while", "Compreensão de listas", "Funções"] },
+        { "week": 4, "title": "POO em Python", "topics": ["Classes e Objetos", "Herança", "Encapsulamento", "Polimorfismo"] },
+        { "week": 5, "title": "Módulos e Pacotes", "topics": ["import/from", "pip e virtualenv", "Criação de módulos", "PyPI"] },
+        { "week": 6, "title": "Tratamento de Erros", "topics": ["try/except/finally", "Exceções customizadas", "Context Managers", "Logging"] },
+        { "week": 7, "title": "Arquivos e I/O", "topics": ["Leitura e escrita de arquivos", "CSV", "JSON", "Pickle"] },
+        { "week": 8, "title": "Pandas e NumPy", "topics": ["DataFrames", "Operações com arrays", "Limpeza de dados", "Análise exploratória"] },
+        { "week": 9, "title": "Visualização de Dados", "topics": ["Matplotlib", "Seaborn", "Plotly", "Gráficos interativos"] },
+        { "week": 10, "title": "FastAPI", "topics": ["Criação de APIs", "Pydantic", "Dependências", "Documentação automática"] },
+        { "week": 11, "title": "Banco de Dados", "topics": ["SQLAlchemy", "Alembic (migrations)", "PostgreSQL", "Redis"] },
+        { "week": 12, "title": "Machine Learning Intro", "topics": ["Scikit-learn", "Regressão Linear", "Classificação", "Avaliação de modelos"] },
+        { "week": 13, "title": "Projeto de Dados", "topics": ["Pipeline de dados", "Dashboard com Streamlit", "Deploy no Heroku/Render"] },
+        { "week": 14, "title": "Boas Práticas", "topics": ["PEP8", "Type hints", "Testes com pytest", "Documentação"] }
+      ],
+      "challenges": {
+        "iniciante": [
+          {
+            "title": "Analisador de Texto",
+            "description": "Crie uma função analisar_texto(texto) que retorne um dicionário com: total de palavras, total de caracteres, palavra mais frequente e média de letras por palavra.",
+            "hint": "Use split() para separar palavras e Counter do módulo collections para frequências.",
+            "example": "analisar_texto('o rato roeu a roupa') => {'palavras': 5, 'chars': 20, ...}"
+          }
+        ],
+        "intermediario": [
+          {
+            "title": "Gerador de Relatório CSV",
+            "description": "Leia um arquivo CSV de vendas (produto, quantidade, preco_unit) e gere um relatório em texto com total por produto, total geral e produto mais vendido.",
+            "hint": "Use o módulo csv e dicionários para acumular totais. Ordene os resultados com sorted().",
+            "example": "python relatorio.py vendas.csv"
+          }
+        ],
+        "avancado": [
+          {
+            "title": "API de Previsão com FastAPI",
+            "description": "Crie uma API com FastAPI que receba dados de uma pessoa (idade, renda, escolaridade) e retorne uma classificação usando um modelo de ML treinado com scikit-learn.",
+            "hint": "Treine o modelo em um script separado e salve com pickle. Carregue no startup da API.",
+            "example": "POST /predict { 'idade': 30, 'renda': 5000, 'escolaridade': 'superior' } => { 'classe': 'A' }"
+          }
+        ]
+      }
+    },
+    "react": {
+      "name": "React e Ecossistema",
+      "icon": "⚛️",
+      "description": "Construa interfaces modernas com React, desde componentes básicos até aplicações completas com Next.js.",
+      "duration": "10 semanas",
+      "level": "iniciante ao avançado",
+      "modules": [
+        { "week": 1, "title": "Fundamentos React", "topics": ["JSX", "Componentes funcionais", "Props", "Renderização"] },
+        { "week": 2, "title": "Estado e Ciclo de Vida", "topics": ["useState", "useEffect", "Lifting state up", "Controlled components"] },
+        { "week": 3, "title": "Hooks Avançados", "topics": ["useContext", "useReducer", "useMemo", "useCallback", "useRef"] },
+        { "week": 4, "title": "Roteamento", "topics": ["React Router v6", "Rotas aninhadas", "Parâmetros de URL", "Navegação programática"] },
+        { "week": 5, "title": "Gerenciamento de Estado Global", "topics": ["Context API", "Zustand", "Redux Toolkit", "React Query"] },
+        { "week": 6, "title": "Estilização", "topics": ["CSS Modules", "Styled Components", "Tailwind CSS", "Framer Motion"] },
+        { "week": 7, "title": "Formulários e Validação", "topics": ["React Hook Form", "Zod", "Yup", "Validações customizadas"] },
+        { "week": 8, "title": "Testes em React", "topics": ["React Testing Library", "Jest", "Mocking de API", "Snapshot tests"] },
+        { "week": 9, "title": "Next.js", "topics": ["SSR e SSG", "App Router", "API Routes", "Otimização de imagens"] },
+        { "week": 10, "title": "Deploy e Performance", "topics": ["Build e otimização", "Vercel/Netlify", "Lighthouse", "Web Vitals"] }
+      ],
+      "challenges": {
+        "iniciante": [
+          {
+            "title": "Todo List com Filtros",
+            "description": "Crie uma aplicação React de lista de tarefas com: adicionar tarefa, marcar como concluída, remover e filtrar por status (todas/ativas/concluídas).",
+            "hint": "Use useState para a lista e o filtro. Derive a lista filtrada sem criar um estado separado.",
+            "example": "<TodoApp /> com 3 abas de filtro e contador de tarefas pendentes"
+          }
+        ],
+        "intermediario": [
+          {
+            "title": "Dashboard de GitHub",
+            "description": "Crie um componente que busque dados de um usuário do GitHub via API (octocat) e exiba: avatar, nome, bio, número de repos, seguidores e os 5 repos mais populares.",
+            "hint": "Use useEffect e useState para fetch. Trate estados de loading e erro com componentes separados.",
+            "example": "<GitHubCard username='octocat' />"
+          }
+        ],
+        "avancado": [
+          {
+            "title": "Editor de Markdown em Tempo Real",
+            "description": "Crie um editor dividido: painel esquerdo com textarea e painel direito com preview do markdown renderizado. Adicione syntax highlighting, contagem de palavras e export para HTML.",
+            "hint": "Use a lib 'marked' para parsear o markdown. Use useMemo para não re-renderizar o preview desnecessariamente.",
+            "example": "Editor split-pane com preview live e barra de ferramentas"
+          }
+        ]
+      }
+    },
+    "devops": {
+      "name": "DevOps e Cloud",
+      "icon": "☁️",
+      "description": "Aprenda os fundamentos de DevOps, CI/CD, Docker, Kubernetes e deploy em cloud.",
+      "duration": "16 semanas",
+      "level": "intermediário ao avançado",
+      "modules": [
+        { "week": 1, "title": "Linux Fundamentos", "topics": ["Comandos básicos", "Sistema de arquivos", "Permissões", "Shell scripting"] },
+        { "week": 2, "title": "Git Avançado", "topics": ["Branching strategies", "Rebase interativo", "Git hooks", "Conventional commits"] },
+        { "week": 3, "title": "Docker Básico", "topics": ["Containers vs VMs", "Dockerfile", "Imagens e layers", "Volumes e redes"] },
+        { "week": 4, "title": "Docker Avançado", "topics": ["Docker Compose", "Multi-stage builds", "Registry privado", "Otimização de imagens"] },
+        { "week": 5, "title": "CI/CD Conceitos", "topics": ["Integração Contínua", "Deploy Contínuo", "Pipelines", "Artefatos"] },
+        { "week": 6, "title": "GitHub Actions", "topics": ["Workflows", "Jobs e steps", "Secrets", "Actions do Marketplace"] },
+        { "week": 7, "title": "Kubernetes Básico", "topics": ["Pods e Deployments", "Services", "ConfigMaps e Secrets", "kubectl"] },
+        { "week": 8, "title": "Kubernetes Avançado", "topics": ["Ingress", "Persistent Volumes", "HPA (autoscaling)", "Helm charts"] },
+        { "week": 9, "title": "AWS Fundamentos", "topics": ["EC2", "S3", "RDS", "IAM e segurança"] },
+        { "week": 10, "title": "Infraestrutura como Código", "topics": ["Terraform básico", "Ansible", "CloudFormation", "Módulos reutilizáveis"] },
+        { "week": 11, "title": "Observabilidade", "topics": ["Prometheus e Grafana", "ELK Stack", "Distributed tracing", "Alertas"] },
+        { "week": 12, "title": "Segurança DevSecOps", "topics": ["SAST/DAST", "Scan de vulnerabilidades", "Secrets management", "OWASP Top 10"] },
+        { "week": 13, "title": "Site Reliability Engineering", "topics": ["SLO/SLA/SLI", "Error budgets", "Runbooks", "Chaos Engineering"] },
+        { "week": 14, "title": "Microservices", "topics": ["Arquitetura de microserviços", "Service mesh", "API Gateway", "Event-driven"] },
+        { "week": 15, "title": "Projeto Final", "topics": ["Pipeline completo", "Deploy em Kubernetes", "Monitoramento", "Rollback automático"] },
+        { "week": 16, "title": "Carreira DevOps", "topics": ["Certificações (AWS, CKA)", "Portfólio", "Entrevistas técnicas", "Roadmap"] }
+      ],
+      "challenges": {
+        "iniciante": [
+          {
+            "title": "Dockerfile de Node.js Otimizado",
+            "description": "Crie um Dockerfile multi-stage para uma aplicação Node.js que: use node:alpine, separe dependências de dev e prod, minimize o tamanho final da imagem para menos de 150MB.",
+            "hint": "Use multi-stage build com 'builder' e 'production'. No stage final, copie apenas node_modules de produção.",
+            "example": "docker build -t myapp . && docker images myapp (deve mostrar <150MB)"
+          }
+        ],
+        "intermediario": [
+          {
+            "title": "Pipeline CI/CD com GitHub Actions",
+            "description": "Crie um workflow GitHub Actions que: execute testes em pull requests, faça build e push da imagem Docker para o GitHub Container Registry e deploy automático em push para main.",
+            "hint": "Use jobs separados para test, build e deploy. Use outputs entre jobs para passar a tag da imagem.",
+            "example": ".github/workflows/ci-cd.yml com 3 jobs encadeados"
+          }
+        ],
+        "avancado": [
+          {
+            "title": "Stack de Observabilidade",
+            "description": "Monte um docker-compose com: aplicação Node.js instrumentada com OpenTelemetry, Prometheus coletando métricas, Grafana com dashboard pré-configurado e alertas para latência > 200ms.",
+            "hint": "Use o OpenTelemetry SDK para Node.js. Configure o prometheus.yml com scrape_configs apontando para sua app.",
+            "example": "docker-compose up => Grafana em :3000 com métricas em tempo real"
+          }
+        ]
+      }
+    },
+    "sql": {
+      "name": "SQL e Banco de Dados",
+      "icon": "🗄️",
+      "description": "Domine SQL, modelagem de dados, performance e bancos de dados modernos.",
+      "duration": "8 semanas",
+      "level": "iniciante ao intermediário",
+      "modules": [
+        { "week": 1, "title": "Fundamentos SQL", "topics": ["SELECT, FROM, WHERE", "ORDER BY, LIMIT", "Funções de agregação", "GROUP BY, HAVING"] },
+        { "week": 2, "title": "JOINs", "topics": ["INNER JOIN", "LEFT/RIGHT JOIN", "FULL OUTER JOIN", "CROSS JOIN e SELF JOIN"] },
+        { "week": 3, "title": "Subconsultas e CTEs", "topics": ["Subqueries correlacionadas", "WITH (CTE)", "Window Functions", "CASE WHEN"] },
+        { "week": 4, "title": "Modelagem de Dados", "topics": ["Entidade-Relacionamento", "Normalização (1FN ao 3FN)", "Chaves primárias e estrangeiras", "Índices"] },
+        { "week": 5, "title": "DDL e DML", "topics": ["CREATE/ALTER/DROP", "INSERT/UPDATE/DELETE", "Transações (BEGIN/COMMIT/ROLLBACK)", "Constraints"] },
+        { "week": 6, "title": "Performance e Tuning", "topics": ["EXPLAIN ANALYZE", "Criação de índices", "Query optimization", "Particionamento"] },
+        { "week": 7, "title": "PostgreSQL Avançado", "topics": ["JSONB e arrays", "Full-text search", "Stored procedures", "Triggers"] },
+        { "week": 8, "title": "NoSQL Intro", "topics": ["MongoDB basics", "Redis para cache", "Quando usar NoSQL", "Comparativo relacional vs documento"] }
+      ],
+      "challenges": {
+        "iniciante": [
+          {
+            "title": "Análise de Vendas",
+            "description": "Dado um schema com tabelas orders, customers e products, escreva queries para: top 5 clientes por valor gasto, mês com maior faturamento e produtos que nunca foram vendidos.",
+            "hint": "Use SUM() com GROUP BY para agregações. LEFT JOIN para encontrar produtos sem vendas.",
+            "example": "SELECT c.name, SUM(o.total) as total_gasto FROM ..."
+          }
+        ],
+        "intermediario": [
+          {
+            "title": "Ranking com Window Functions",
+            "description": "Escreva uma query que retorne, para cada departamento de uma empresa: o funcionário com maior salário, a média salarial e o ranking de salários usando DENSE_RANK().",
+            "hint": "Use PARTITION BY para aplicar window functions por departamento.",
+            "example": "SELECT *, DENSE_RANK() OVER (PARTITION BY dept ORDER BY salary DESC) as rank FROM ..."
+          }
+        ],
+        "avancado": [
+          {
+            "title": "Otimização de Query Lenta",
+            "description": "Uma query de relatório demora 45 segundos. Use EXPLAIN ANALYZE para identificar o gargalo, crie os índices corretos e reescreva usando CTEs para que execute em menos de 1 segundo.",
+            "hint": "Verifique Seq Scan em tabelas grandes. Índices compostos na ordem correta (WHERE primeiro, depois ORDER BY).",
+            "example": "Antes: 45000ms | Depois: <500ms com índice e reescrita"
+          }
+        ]
+      }
+    }
+  }
+}
